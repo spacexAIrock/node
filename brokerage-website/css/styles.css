@@ -835,6 +835,10 @@ table.markets tbody tr:hover {
   color: var(--gain);
 }
 
+.summary-delta.down {
+  color: var(--loss);
+}
+
 .holdings-chart {
   height: 120px;
   margin-top: 1.25rem;
