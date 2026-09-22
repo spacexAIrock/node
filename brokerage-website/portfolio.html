@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Northline</title>
+    <meta name="description" content="View your Northline demo portfolio and holdings." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav is-scrolled" aria-label="Primary">
+      <a class="nav-brand" href="index.html">
+        <span class="mark" aria-hidden="true"></span>
+        Northline
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#approach">Approach</a></li>
+        <li><a href="markets.html">Markets</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li>
+          <a class="nav-cta" href="markets.html">Trade</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="page-hero">
+      <h1>Portfolio</h1>
+      <p>Your demo account balances, day change, and holdings allocation.</p>
+    </header>
+
+    <section class="section" style="padding-top: 2rem">
+      <div class="section-inner">
+        <div class="auth-banner" id="auth-banner">
+          <span>Demo account ready. Holdings persist in this browser.</span>
+          <button class="btn btn-dark" type="button" id="reset-portfolio" style="padding: 0.5rem 1rem; font-size: 0.9rem">
+            Reset demo
+          </button>
+        </div>
+
+        <div class="portfolio-summary">
+          <div class="summary-block">
+            <p class="summary-label">Total equity</p>
+            <p class="summary-value" id="equity-value">$0.00</p>
+            <p class="summary-delta up" id="equity-delta">+$0.00 (0.00%) today</p>
+            <div class="holdings-chart" aria-hidden="true">
+              <svg viewBox="0 0 400 120" preserveAspectRatio="none" id="equity-spark">
+                <path
+                  fill="none"
+                  stroke="#1f6b52"
+                  stroke-width="2.5"
+                  d="M0,90 C40,88 70,70 110,72 C150,74 180,40 220,38 C260,36 300,55 340,30 C370,15 390,20 400,18"
+                />
+                <path
+                  fill="rgba(31,107,82,0.12)"
+                  d="M0,90 C40,88 70,70 110,72 C150,74 180,40 220,38 C260,36 300,55 340,30 C370,15 390,20 400,18 L400,120 L0,120 Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="summary-block">
+            <p class="summary-label">Cash</p>
+            <p class="summary-value" id="cash-value" style="font-size: 1.85rem">$0.00</p>
+            <p class="summary-label" style="margin-top: 1.5rem">Invested</p>
+            <p class="summary-value" id="invested-value" style="font-size: 1.85rem">$0.00</p>
+          </div>
+        </div>
+
+        <div class="panel" style="padding: 0.5rem 1.35rem 1rem">
+          <p class="section-kicker" style="margin-top: 1rem">Holdings</p>
+          <ul class="holdings-list" id="holdings-list"></ul>
+        </div>
+
+        <p style="margin-top: 1.75rem">
+          <a class="btn btn-dark" href="markets.html">Place a trade</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div><strong>Northline</strong> · Portfolio</div>
+      <div>© 2026 Northline Demo</div>
+      <p class="disclaimer">
+        Demo balances only. Not a real brokerage account.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
