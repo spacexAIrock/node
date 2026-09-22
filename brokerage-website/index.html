@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northline — Invest with a clear horizon</title>
+    <meta
+      name="description"
+      content="Northline is a simple investment brokerage for stocks, ETFs, and long-horizon portfolios."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-brand" href="index.html">
+        <span class="mark" aria-hidden="true"></span>
+        Northline
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="markets.html">Markets</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li>
+          <a class="nav-cta" href="portfolio.html">Open account</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+          alt=""
+          width="2000"
+          height="1333"
+        />
+      </div>
+      <svg class="hero-chart" viewBox="0 0 1200 320" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="ghost"
+          d="M0,260 C80,250 140,220 220,230 C300,240 340,180 420,160 C500,140 560,190 640,150 C720,110 780,90 860,100 C940,110 1000,60 1080,40 C1140,28 1180,20 1200,18"
+        />
+        <path
+          d="M0,280 C90,270 150,240 230,245 C310,250 360,200 440,170 C520,140 580,175 660,130 C740,85 800,70 880,75 C960,80 1020,45 1100,30 C1150,22 1185,16 1200,12"
+        />
+      </svg>
+      <div class="hero-content">
+        <p class="hero-brand">Northline</p>
+        <h1 class="hero-headline">Invest with a clear horizon.</h1>
+        <p class="hero-lede">
+          A focused brokerage for stocks and ETFs—built for people who want
+          clarity over noise.
+        </p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="portfolio.html">Start investing</a>
+          <a class="btn btn-ghost" href="markets.html">Browse markets</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section approach" id="approach">
+      <div class="section-inner reveal">
+        <p class="section-kicker">How it works</p>
+        <h2 class="section-title">Three steps from cash to compound.</h2>
+        <p class="section-lede">
+          No jargon maze. Fund once, choose what you believe in, and watch the
+          horizon move with you.
+        </p>
+        <ol class="steps">
+          <li>
+            <h3>Open &amp; fund</h3>
+            <p>
+              Create an account in minutes and transfer cash. Your buying power
+              is ready the same day for most transfers.
+            </p>
+          </li>
+          <li>
+            <h3>Choose holdings</h3>
+            <p>
+              Trade individual stocks or broad ETFs. Search by symbol, compare
+              moves, and place market or limit orders.
+            </p>
+          </li>
+          <li>
+            <h3>Track the line</h3>
+            <p>
+              See allocation, performance, and daily change in one portfolio
+              view—calibrated for long-term decisions.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section markets-section" id="markets-preview">
+      <div class="section-inner reveal">
+        <p class="section-kicker">Live snapshot</p>
+        <h2 class="section-title">Markets that move with the day.</h2>
+        <p class="section-lede">
+          Sample quotes update in real time in this demo—enough signal to feel
+          the floor without the clutter.
+        </p>
+        <div class="ticker-row" id="home-tickers" aria-live="polite"></div>
+        <a class="link-arrow" href="markets.html">
+          View all markets
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section custody">
+      <div class="section-inner custody-grid reveal">
+        <div>
+          <p class="section-kicker">Custody</p>
+          <h2 class="section-title">Assets held with care.</h2>
+          <p class="section-lede">
+            Northline is a demo experience—but the product story is built around
+            transparent custody and plain-language statements.
+          </p>
+          <div class="custody-visual" role="img" aria-label="Modern city towers against open sky"></div>
+        </div>
+        <ul class="custody-points">
+          <li>
+            <h3>Segregated client assets</h3>
+            <p>
+              Positions and cash are tracked separately from operating funds, so
+              you always know what is yours.
+            </p>
+          </li>
+          <li>
+            <h3>Statements you can read</h3>
+            <p>
+              Monthly summaries show cost basis, dividends, and fees without a
+              spreadsheet scavenger hunt.
+            </p>
+          </li>
+          <li>
+            <h3>Support that stays on shore</h3>
+            <p>
+              Human help for transfers, tax forms, and trade questions—no
+              endless chat loops.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="section-inner reveal">
+        <h2 class="section-title">Ready for a clearer line north?</h2>
+        <p class="section-lede">
+          Open a demo portfolio and place a practice trade in under a minute.
+        </p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="portfolio.html">Open account</a>
+          <a class="btn btn-ghost" href="markets.html">Explore markets</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Northline</strong> · Simple investment brokerage
+      </div>
+      <div>© 2026 Northline Demo</div>
+      <p class="disclaimer">
+        This is a front-end demonstration only. Quotes are simulated. Nothing
+        here is an offer to buy or sell securities, or investment advice.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
